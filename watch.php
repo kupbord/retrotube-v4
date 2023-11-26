@@ -34,7 +34,7 @@
 <meta property="twitter:player:width" content="1280">
 <meta property="twitter:player:height" content="720">
 <meta name="title" content="'.$row['videotitle'].'">
-<title>'.$row['videotitle'].' - OldWire</title> ';
+<title>'.$row['videotitle'].' - Revid</title> ';
 }
 $statement->close();
 ?>

@@ -73,7 +73,7 @@ margin-bottom: -42px;
 
 			<td>
 			<div class="footColumnRight">
-				<div class="footLabel">OldWire</div>
+				<div class="footLabel">Revid</div>
 				<div class="footValues">
 					<div class="column">
 						<a href="/about.php">Company Info</a><br>
@@ -90,5 +90,5 @@ margin-bottom: -42px;
 			</tr></tbody></table></div>
 			</span>
 </center><br>
-<center id="footcopy"><p></a>© 2007 OldWire - <a href="/themes.php">Themes</a> - <a href="/credits.php">Credits</a> - <a href="/whats_new.php">What's New</a></p></center>
+<center id="footcopy"><p></a>© 2008 Revid - <a href="/themes.php">Themes</a> - <a href="/credits.php">Credits</a> - <a href="/whats_new.php">What's New</a></p></center>
 <script src="js/themes-global.js"></script>

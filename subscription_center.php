@@ -2,7 +2,7 @@
 <?php include 'global.php';?>
 <?php include 'bancheck.php';?>
 <head>
-    <title>Your Subscriptions - YuoTueb</title>
+    <title>Your Subscriptions - Revid</title>
 	<link rel="stylesheet" type="text/css" href="./css/global.css">
     <link rel="stylesheet" type="text/css" href="./css/channels.css">
 </head>

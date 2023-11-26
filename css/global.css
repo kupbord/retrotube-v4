@@ -4,7 +4,7 @@ html {
     --header-button-1: #ffffff;
     --header-button-2: #acbbe0;
     --bg: #fff;
-    --rlogo: url(owchristmas2023.png);
+    --rlogo: url(reallogo.png);
     --hr: #aaa;
     --header-combo: linear-gradient(#bbb, #ddd);
     --card-msg-1: #ffffdd;
@@ -195,7 +195,7 @@ html, body {
 
 .card.message .card-header {
     font-weight: bold;
-    color: #aa6600;
+    color: #CC6600;
     margin-bottom: 7px;
     font-size: 16px;
 }
@@ -231,6 +231,16 @@ a {
     /* border-radius: 7px; */
     font-weight: normal;
 } 
+.greenmsg {
+        background-color: #cfeeb2;
+        color: #000;
+        /* border: 1px solid var(--card-redb-2); */
+        padding: 7px 15px;
+        font-size: 13px;
+        margin-top: -15px;
+        /* border-radius: 7px; */
+        font-weight: normal;
+}
 /* .errmsg {
     border-width:3px; 
     border-style:solid; 
@@ -422,4 +432,27 @@ table a {
 }
 #footcopy p {
        font-size: 11px;
+}
+.uploadbtn {
+    background: linear-gradient(to bottom,  #fff9c1 1%,#fff9bf 5%,#ffef98 31%,#ffed8d 36%,#ffed8b 41%,#fee569 58%,#fee568 63%,#fee150 72%,#fedb32 89%,#fed81c 98%,#f7cf11 100%);
+    border: 1px solid #ECC101;
+    padding: 6px;
+    border-radius: 5px;
+    margin: -3px 5px;
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: #994800 !important;
+    width: 55px !important;
+    text-align: center;
+}
+.header {
+    border-radius: 10px !important;
+}
+.alignR {
+    text-align: right;
+}
+.menu-element {
+    font-size: 12px !important;
 }

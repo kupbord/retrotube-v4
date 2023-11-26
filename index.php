@@ -170,12 +170,17 @@
         <?php
             if($loggedIn) {
                 $rows = getSubscribers($_SESSION['profileuser3'], $mysqli);
-                $statement = $mysqli->prepare("SELECT `date` FROM `users` WHERE `username` = ? LIMIT 1");
+                $statement = $mysqli->prepare("SELECT `date`, `channelviews` FROM `users` WHERE `username` = ? LIMIT 1");
                 $statement->bind_param("s", $_SESSION['profileuser3']);
                 $statement->execute();
                 $result = $statement->get_result();
                 while($row = $result->fetch_assoc()) {
                 $joined = time_elapsed_string($row['date']);
+                if($row['channelviews'] == 0) {
+                    $channelviews = "no";
+                } else {
+                    $channelviews = $row['channelviews'];
+                }
                 }
                 $statement = $mysqli->prepare("SELECT SUM(views) AS total FROM videos WHERE author = ?");
                 $statement->bind_param("s", $_SESSION['profileuser3']);
@@ -184,6 +189,13 @@
                 while($row = $result->fetch_assoc()) {
                 $totalviews = $row["total"];
                 }
+                $statement = $mysqli->prepare("SELECT * FROM videos WHERE author = ?");
+            $statement->bind_param("s", $_SESSION['profileuser3']);
+            $statement->execute();
+            $result = $statement->get_result();
+            if($result->num_rows == 0) {
+              $totalviews = 0;
+          }
                 echo '<div class="card login">
                 <div class="card-header">
                     Welcome, '.$_SESSION['profileuser3'].'!
@@ -191,7 +203,8 @@
                 <div class="card-content">
                 You have '.$rows.' subscribers!
                 <br>You joined '.$joined.'.<br>
-                You have '.$totalviews.' views!
+                You have '.$totalviews.' video views!<br>
+                You have '.$channelviews.' profile views!
                 </div>
                 </div>';
             }?>
@@ -223,7 +236,11 @@
             ?>
             <div class="card message">
                 <div class="card-header">What's New</div>
-                We have made a few more changes to the site:<br><br>+ <a href="confirm_dv.php">Account deletion</a><br>+ Redesigned profiles (not Channel 1.0, but you can change channel background now)<br>+ Added Community page<br>+ Improved footer<br><br>That's it! Next: Video manager.
+                <b style="color:#CC6600">More updates</b><br>The site has been updated to look more like 2008. It's not fully finished yet, though.
+                <br>
+                <div class="alignR padT5"><br>
+					<a href="whats_new.php" style="color:#CC6600;text-decoration: underline;">Read more in our Blog</a>
+				</div>
             </div> 
             <!-- <div class="card login cardwn">
                 <div class="card-header whatsnew">

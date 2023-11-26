@@ -10,9 +10,9 @@
             while($row = $result->fetch_assoc()) {
                // $channelbackground = $row['channel_background'];
                 if ($row['banned'] == '1') {
-                    header("Location: index.php?err=This account has been suspended by OldWire staff<br/>Reason: ".$row['ban_reason']);
+                    header("Location: index.php?err=This account has been suspended by Revid staff<br/>Reason: ".$row['ban_reason']);
               }else{
-                echo $row['username']."'s Profile - OldWire";
+                echo $row['username']."'s Profile - Revid";
               }
             }
             $statement->close();
@@ -136,6 +136,13 @@ echo "<div><a onclick='alert('You are not logged in.')'><img src='buttonsub.png'
                                     while($row = $result->fetch_assoc()) {
                                     $totalviews = $row["total"];
                                     }
+                                    $statement = $mysqli->prepare("SELECT * FROM videos WHERE author = ?");
+            $statement->bind_param("s", $_GET['user']);
+            $statement->execute();
+            $result = $statement->get_result();
+            if($result->num_rows == 0) {
+              $totalviews = 0;
+          }
                                     ?>
                 <?php
                 $statement = $mysqli->prepare("SELECT `description`, `date` FROM `users` WHERE `username` = ? LIMIT 1");
@@ -162,6 +169,16 @@ echo "<div><a onclick='alert('You are not logged in.')'><img src='buttonsub.png'
                 </div>";
                 }
                 $statement->close();
+                if(isset($_SESSION['views'.$_GET['user'].'']))
+                $_SESSION['views'.$_GET['user'].''] = $_SESSION['views'.$_GET['user'].'']+1;
+            else
+                $_SESSION['views'.$_GET['user'].'']=1;
+                //check if the user has already viewed the video
+                if ($_SESSION['views'.$_GET['user'].''] > 1) {
+                echo "";
+                } else {
+                mysqli_query($mysqli, "UPDATE users SET channelviews = channelviews+1 WHERE username = '" . $_GET['user'] . "'");
+                }   
                 ?>
             </div>
         </div>

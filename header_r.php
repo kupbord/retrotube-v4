@@ -105,7 +105,7 @@ margin-left: -770px;
 			    if($result->num_rows === 0) exit('No rows');
 			    while($row = $result->fetch_assoc()) {
 			        /* echo "<div class=\"menu-element\"><strong>Hello, <a href=\"./profile.php?user=".$row["username"]."\">".$row["username"]."</a></strong> | <a href=\"./account.php\">Account</a> | <a href=\"./#\">History</a> | <a href=\"./help.php\">Help</a> | <a href=\"./alogout.php\">Log Out</a> | <a href=\"./#\">Site: <img src='en.png'></img></a></div>";*/
-					echo '<div class="menu-element"><strong>Hello, <a href="./profile.php?user='.$row['username'].'">'.$row['username'].'</a></strong> <img style="margin-left:4px;" src="img/mail.gif"> (<a href="/inbox">'.$unread.'</a>) | <a href="account.php">My Account</a> | <a href="#">History</a> | <a href="help.php">Help</a> | <a href="alogout.php">Log Out</a></div>';
+					echo '<div class="menu-element"><a href="my_videos.php"><img style="margin-right:3px;margin-bottom:-2px;" src="img/my_videos.png"></a> <a href="./profile.php?user='.$row['username'].'">'.$row['username'].'</a>  | <img style="margin-bottom:-1px;" src="img/mail.gif"> (<a href="/inbox">'.$unread.'</a>) | <a href="account.php">Account</a> | <a href="#">QuickList</a> (0) | <a href="help.php">Help</a> | <a href="alogout.php">Sign Out</a></div>';
 			    }
 			    $statement->close();
       }

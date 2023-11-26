@@ -35,11 +35,11 @@
                 <div class="card-header">Uploading Rules:</div>
                 <ul>
                     <li>NO GORE/NSFW (video will be deleted)</li>
-                    <li>NO ILLEGAL VIDEOS (permanant ip ban off of retrotube.ml)</li>
+                    <li>NO ILLEGAL VIDEOS (permanant ip ban off of revid.pw)</li>
                     <li>VIDEO METADATA IS NOT CORRUPTED (video will be deleted)</li>
                     <li>NO OFFENSIVE CONTENT (account deletion & discord ban if applicable)
                 </ul>
-                Thanks.
+                Thanks. Also, .mp4 files only.
             </div>
         </div>
     </div>

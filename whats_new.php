@@ -15,6 +15,11 @@
 	<?php
 	include("header.php");
 	?>
+   <h3 class="newh3">November 26, 2007</h3>
+<hr>
+<p class="newp">I brought the site back. Why was it gone in the first place? Long story.<br>
+
+
     <h3 class="newh3">November 6, 2007</h3>
 <hr>
 <p class="newp">Unfortunately I ran out of time, so video responses are delayed. But I was able to get everything else in. Enjoy!<br>

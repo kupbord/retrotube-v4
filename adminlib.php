@@ -1,5 +1,5 @@
 <?php
-/* admin functions for tictac and oldwire */
+/* admin functions for tictac and revid */
 function banUser($username, $reason, $mysqli) {
     // $stmt = $mysqli->prepare("UPDATE videos SET privacy = 'private' WHERE author = ?");
     // $stmt->bind_param("s", $username);

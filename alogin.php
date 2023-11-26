@@ -80,7 +80,7 @@
         <div class="col-1-2">
             <h3>Thanks for making an account!</h3>
             <p>
-Welcome to OldWire!
+Welcome to Revid!
             </p>
             When you login, you can:
             <ul>
