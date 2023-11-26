@@ -38,6 +38,7 @@
                 </ul>
             </div>
             <?php
+                 error_reporting(E_ALL & E_NOTICE);
                 if(isset($_SESSION['profileuser3'])) {
                     echo('<script>
                          window.location.href = "index.php";
