@@ -113,5 +113,5 @@ margin-left: -770px;
 
 
 	<div class="cheader">
-	    <a href="./">Home</a> | <a href="./videos.php">Videos</a> | <a href="./channels.php">Channels</a> | <a href="./community.php">Community</a> | <a href="./upload.php">Upload</a>
+	    <a href="./">Home</a> | <a href="./videos.php">Videos</a> | <a href="./channels.php">Channels</a> | <a href="./community.php">Community</a> | <a href="./my_videos_upload.php">Upload</a>
 	</div>

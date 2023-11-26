@@ -122,11 +122,11 @@ margin-left: -770px;
 	    <a class="col-generic header-button" href="./videos.php">Videos</a>
 	    <a class="col-generic header-button" href="./channels.php">Channels</a>
 	    <a class="col-generic header-button" href="./community.php">Community</a>
-	    <a class="upload" href="./upload.php"><img src="buttonupload.png"></a>
 	</div>
 	<div class="header">
 <div class="pobygo">
-<img class="pbg" src="poweredbygoogle.png" <="" div="">
+<a class="uploadbtn" href="./my_videos_upload.php">Upload</a>
+ <img class="pbg" src="blank.png" <="" div=""> 
 </div>
 <form method="get" action="results.php">
 	    <center><input class="test" type="text" placeholder="" name="q"> <select class="search-type" name="search_type">

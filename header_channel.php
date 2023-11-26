@@ -125,7 +125,7 @@ margin-left: -770px;
 	</div>
 	<div class="header">
 <div class="pobygo">
-<a class="uploadbtn" href="./upload.php">Upload</a>
+<a class="uploadbtn" href="./my_videos_upload.php">Upload</a>
  <img class="pbg" src="blank.png" <="" div=""> 
 </div>
 <form method="get" action="results.php">
